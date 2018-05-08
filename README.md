@@ -30,4 +30,4 @@ For latest, we first need to calculate the latest finish of the "finish" task. A
 **Task.java** is a object which we create for every task and store all the calculated values.
 
 ## Output
-![Output](https://github.com/Ekskursantas/CAL3/blob/master/Screenshot_3.png)
+![Output](https://github.com/Ekskursantas/CAL3/blob/master/Screenshot_10.png)
