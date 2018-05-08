@@ -59,22 +59,22 @@ public class App {
 
 	public static void addTasks() {
 
-		Task end = new Task(1, "end", null); // it is required to be named as "end" because in the setup class we use the "end" string to make sure we set the values before we calculate "latest" values.
-		Task task_e = new Task(5, "E", new Task[] { end });
-		Task task_d = new Task(25, "D", new Task[] { task_e });
-		Task task_c = new Task(15, "C", new Task[] { task_d });
-		Task task_b = new Task(10, "B", new Task[] { task_c });
-		Task task_k = new Task(5, "K", new Task[] { end });
-		Task task_v = new Task(25, "V", new Task[] {end});
-		Task start = new Task(10, "start", new Task[] { task_b, task_k, task_v }); // same as "end" just for "earliest" values
+		Task end = new Task(20, "end", null); // it is required to be named as "end" because in the setup class we use the "end" string to make sure we set the values before we calculate "latest" values.
+		Task task_d = new Task(10, "D", new Task[] { end });
+		Task task_g = new Task(5, "G", new Task[] {end});
+		Task task_c = new Task(5, "C", new Task[] { task_d, task_g });
+		Task task_b = new Task(20, "B", new Task[] { task_c });
+		Task task_h = new Task(15, "H", new Task[] { end });
+		Task task_f = new Task(15, "F", new Task[] {task_g});
+		Task start = new Task(10, "start", new Task[] { task_b, task_h, task_f }); // same as "end" just for "earliest" values
 
 		tasks.add(start);
+		tasks.add(task_f);
+		tasks.add(task_g);
+		tasks.add(task_h);
 		tasks.add(task_b);
 		tasks.add(task_c);
 		tasks.add(task_d);
-		tasks.add(task_e);
-		tasks.add(task_k);
-		tasks.add(task_v);
 		tasks.add(end);
 	}
 }
